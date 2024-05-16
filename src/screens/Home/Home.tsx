@@ -1,14 +1,20 @@
 import heroWaves from "../../images/hero-waves.svg";
 import homehero from "../../images/hero-img1.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export const Home = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  },[])
   return (
     <>
       <section id="hero">
         <div className="container">
-          <div className="row justify-content-between z-[99999]">
-            <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center z-[99999]">
-              <div data-aos="zoom-out" className="aos-init aos-animate z-[999999]">
+          <div className="row justify-content-between">
+            <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+              <div data-aos="zoom-out" className="aos-init aos-animate">
                 <h1 className="">Kerekli ónimińizdi Fermler jetkerip beredi</h1>
                 <h2>Awıl xojalıq ónimlerin jetkerip beriw sisteması</h2>
                 <div className="text-center text-lg-start">

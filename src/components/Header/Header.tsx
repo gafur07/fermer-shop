@@ -1,9 +1,28 @@
+import { useEffect, useState } from "react";
+
 const Header = () => {
+  const [navbar, setNavbar] = useState(false)
+  const [menu, setMenu] = useState(false)
+
+
+  function changeBackground () {
+    console.log(window.scrollY)
+    if (window.scrollY >= 66) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  },[])
   return (
     <>
       <header
         id="header"
-        className="fixed-top d-flex align-items-center header-transparent"
+        className={`${navbar ? "header-scrolled" : "header-transparent"} fixed-top d-flex align-items-center`}
       >
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
@@ -14,7 +33,7 @@ const Header = () => {
             </h1>
           </div>
 
-          <nav id="navbar" className="navbar">
+          <nav id="navbar" className={`navbar ${menu ? "navbar-mobile" : ""}`}>
             <ul>
               <li>
                 <a className="nav-link scrollto active" href="#hero">
@@ -42,7 +61,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            <i onClick={() => {{setMenu(!menu)}}} className={`bx ${menu ? 'bx-x' : ''} bx-menu mobile-nav-toggle`}></i>
           </nav>
         </div>
       </header>
