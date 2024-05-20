@@ -42,7 +42,7 @@ const Price = () => {
                 </li>
               </ul>
               <div className="card-body">
-                <a href="user/" className="btn btn-primary">
+                <a href="/login" className="btn btn-primary">
                   Satıp alıw
                 </a>
               </div>
@@ -69,7 +69,7 @@ const Price = () => {
                 </li>
               </ul>
               <div className="card-body">
-                <a href="user/" className="btn btn-primary">
+                <a href="/login" className="btn btn-primary">
                   Satıp alıw
                 </a>
               </div>

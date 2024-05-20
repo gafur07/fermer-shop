@@ -1,4 +1,3 @@
-import heroWaves from "../../images/hero-waves.svg";
 import homehero from "../../images/hero-img1.png";
 import { useEffect } from "react";
 import Aos from "aos";

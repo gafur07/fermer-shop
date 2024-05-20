@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
   const [menu, setMenu] = useState(false)
+  const params = useParams()
+  console.log(params);
+  
 
 
   function changeBackground () {
@@ -13,9 +17,17 @@ const Header = () => {
       setNavbar(false)
     }
   }
+function bgRoutesNav() {
+  if (params !== null) {
+    setNavbar(true)
+  } else {
+    setNavbar(false)
+  }
+}
 
   useEffect(() => {
     changeBackground()
+    bgRoutesNav()
     window.addEventListener("scroll", changeBackground)
   },[])
   return (
@@ -27,7 +39,7 @@ const Header = () => {
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1>
-              <a href="#">
+              <a href="/">
                 <span>Fermer Shop</span>
               </a>
             </h1>
@@ -41,22 +53,22 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#about">
+                <a className="nav-link scrollto" href="/#about">
                   Biz haqımızda
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#features">
+                <a className="nav-link scrollto" href="/#features">
                   Ónimler
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="fermer/">
+                <a className="nav-link scrollto" href="/#fermer">
                   Fermer kabineti
                 </a>
               </li>
               <li>
-                <a className="nav-link scrollto" href="#contact">
+                <a className="nav-link scrollto" href="/#contact">
                   Baylanıs
                 </a>
               </li>

@@ -4,3 +4,32 @@
 .container {
 	@apply w-[80%] mx-auto
 }
+
+.auth-cont {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	min-height: 100vh;
+
+	.bg {
+			background: url("./images/ferma.jpg");
+			width: 50%;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+	}
+}
+
+.login-form {
+	width: 30%;
+	padding: 32px;
+}
+
+@media screen and (max-width: 620px) {
+	.bg {
+		display: none;
+	}
+	.login-form {
+		width: 100%;
+	}
+}

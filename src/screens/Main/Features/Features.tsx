@@ -16,7 +16,7 @@ const Features = () => {
               >
                 <i style={{color: '#ffbb2c'}} className="ri-store-line"></i>
                 <h3>
-                  <a href="">Palız ónimleri</a>
+                  <a href="/category/3">Palız ónimleri</a>
                 </h3>
               </div>
             </div>

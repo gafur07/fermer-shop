@@ -1,0 +1,43 @@
+.category {
+	min-height: 100vh;
+	padding: 0;
+}
+.category-cont {
+	width: 95%;
+	margin: 0 auto;
+}
+.category-row {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 4;
+	grid-row: 4;
+}
+
+.category-name {
+	background: url("../../images/hero-bg.jpg");
+	width: 100%;
+	position: relative;
+	height: 250px;
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		color: #fff;
+		position: absolute;
+		font-weight: 800;
+		right: 0;
+		left: 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		background-color: rgba(2, 5, 161, 0.91);
+		bottom: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+}
