@@ -1,20 +1,30 @@
 .category {
 	min-height: 100vh;
-	padding: 0;
+	padding-top: 0;
 }
 .category-cont {
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
+}
+
+.card {
+	padding: 7px 12px;
+	margin: 40px 0 -40px;
+	img {
+		border-radius: 5px 5px 0 0;
+	}
 }
 .category-row {
 	width: 100%;
 	display: grid;
-	grid-template-rows: 4;
-	grid-row: 4;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 40px;
 }
 
 .category-name {
-	background: url("../../images/hero-bg.jpg");
+	background: url("../../images/vegetables.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	position: relative;
 	height: 250px;
@@ -34,10 +44,29 @@
 	&::before {
 		position: absolute;
 		content: "";
-		background-color: rgba(2, 5, 161, 0.91);
+		background-color: rgba(2, 5, 161, 0.7);
 		bottom: 0;
 		top: 0;
 		right: 0;
 		left: 0;
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+	.category-row {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.category-row {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.category-row {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
 }

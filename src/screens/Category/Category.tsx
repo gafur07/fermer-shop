@@ -2,20 +2,20 @@ import "./Category.scss";
 
 const Category = () => {
   return (
-    <section className="category">
+    <section className="category pb-8">
 			<div className="category-name">
 				<h1>Paliz onimleri</h1>
 			</div>
       <div className="category-cont aos-init aos-animate" data-aos="fade-up">
         <div
-          className="category-row row  aos-init aos-animate"
+          className="category-row aos-init aos-animate"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div style={{ width: "20rem", margin: "20px" }} className="card">
+          <div  className="card">
             <img
-              className="card-img-top"
-              src="https://picsum.photos/300"
+              className=" w-100"
+              src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
             />
@@ -34,16 +34,16 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
           </div>
 
-					<div style={{ width: "20rem", margin: "20px" }} className="card">
+					<div  className="card">
             <img
-              className="card-img-top"
-              src="https://picsum.photos/300"
+              className=" w-100"
+              src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
             />
@@ -62,16 +62,16 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
           </div>
 
-					<div style={{ width: "20rem", margin: "20px" }} className="card">
+					<div  className="card">
             <img
-              className="card-img-top"
-              src="https://picsum.photos/300"
+              className=" w-100"
+              src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
             />
@@ -90,16 +90,16 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
           </div>
 
-					<div style={{ width: "20rem", margin: "20px" }} className="card">
+					<div  className="card">
             <img
-              className="card-img-top"
-              src="https://picsum.photos/300"
+              className=" w-100"
+              src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
             />
@@ -118,16 +118,16 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
           </div>
 
-					<div style={{ width: "20rem", margin: "20px" }} className="card">
+					<div  className="card">
             <img
-              className="card-img-top"
-              src="https://picsum.photos/300"
+              className=" w-100"
+              src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
             />
@@ -146,14 +146,14 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
           </div>
-          <div style={{ width: "20rem", margin: "20px" }} className="card">
+          <div  className="card">
             <img
-              className="card-img-top"
+              className=" w-100"
               src="https://picsum.photos/200"
               alt="Card image cap"
               height="200px"
@@ -173,7 +173,7 @@ const Category = () => {
               </li>
             </ul>
             <div className="card-body">
-              <a href="user/" className="btn btn-primary">
+              <a href="/login" className="btn btn-primary">
                 Satıp alıw
               </a>
             </div>
